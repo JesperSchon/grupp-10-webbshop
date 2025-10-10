@@ -69,4 +69,28 @@ nav .shop {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  background-color: #02200F;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  color: #F0811A;
+}
+footer .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .info p {
+  color: #F0811A;
+  margin: 5px;
+}
+footer .info a {
+  margin: 2px;
+  padding: 5px;
+  text-decoration: none;
+  color: #F1DAA4;
 }/*# sourceMappingURL=main.css.map */
