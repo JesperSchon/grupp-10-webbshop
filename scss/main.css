@@ -72,16 +72,37 @@ nav .shop {
   align-items: center;
 }
 
+main {
+  margin: 20px;
+}
+
 .review {
   border: 2px solid gray;
+  border-radius: 8px;
   padding: 10px;
   margin: 20px;
+}
+.review .stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.review .stars span {
+  font-size: 20px;
 }
 .review .checked {
   color: #F0811A;
 }
+.review .scales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .review input[type=range] {
-  width: 200px;
+  width: 280px;
   margin: 10px;
 }
 .review label {
@@ -119,8 +140,8 @@ nav .shop {
   justify-content: space-between;
   align-items: center;
   writing-mode: horizontal-tb;
-  width: 200px;
-  margin: 2px 3px;
+  width: 280px;
+  margin: 2px 5px;
   padding: 2px;
 }
 

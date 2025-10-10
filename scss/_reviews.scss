@@ -62,16 +62,33 @@ nav{
     }
 }
 
+main{
+    margin: 20px;
+}
+
 .review{
     border: 2px solid gray;
+    border-radius: 8px;
     padding: 10px;
     margin: 20px;
+
+    .stars{
+        @include flex(row,center,center);
+        margin:15px;
+        span{ font-size: 20px;}
+    }
+
     .checked{
         color: $accentColor;
     }
+
+    .scales{
+        @include flex(column,center,center)
+    }
+
     input[type=range]{
-        width: 200px;
-        margin: 10px
+        width: 280px;
+        margin: 10px;
     }
 
     label{
@@ -108,8 +125,8 @@ nav{
     datalist{
         @include flex(row,space-between,center);
         writing-mode: horizontal-tb;
-        width: 200px;
-        margin: 2px 3px;
+        width: 280px;
+        margin: 2px 5px;
         padding: 2px;
     }
 }
