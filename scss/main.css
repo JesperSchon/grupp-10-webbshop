@@ -13,6 +13,7 @@ nav {
   background-color: #02200F;
 }
 nav img {
+  height: 24px;
   padding: 10px;
   cursor: pointer;
 }

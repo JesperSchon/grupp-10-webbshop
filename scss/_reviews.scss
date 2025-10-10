@@ -8,6 +8,7 @@ nav{
     width: 100%;
     background-color: $mainColor;
     img{
+        height: 24px;
         padding: 10px;
         cursor: pointer;
     }
@@ -15,5 +16,5 @@ nav{
         border-style: none;
         background-color: unset;
     }
-    
+
 }
