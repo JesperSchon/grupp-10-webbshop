@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Inter;
 }
 nav{
     @include flex(row,space-between,center);
@@ -62,16 +63,51 @@ nav{
 }
 
 .review{
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 20px;
     input[type=range]{
         width: 200px;
         margin: 10px
     }
+
+    label{
+        font-weight: bolder;
+    }
+
+    .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background: $extraColor;
+    outline: none;
+    }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background: $mainColor;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background: $mainColor;
+    cursor: pointer;
+}
     datalist{
         @include flex(row,space-between,center);
         writing-mode: horizontal-tb;
         width: 200px;
-        margin: 2px 5px;
-        padding: 3px;
+        margin: 2px 3px;
+        padding: 2px;
     }
 }
 
@@ -88,10 +124,14 @@ footer{
             margin: 5px;
         }
         a{
-            margin: 2px;
+            margin: 3px;
             padding: 5px;
             text-decoration: none;
             color: $extraColor;
+        }
+        a:hover{
+            background-color: #405136;
+            border-radius: 8px;
         }
     }
     

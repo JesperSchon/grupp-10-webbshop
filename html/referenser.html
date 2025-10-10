@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/icons/hanger.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/scss/main.css">
     <title>Reviews</title>
 </head>
@@ -34,13 +37,23 @@
             <div class="review">
                 <div class="scales">
                     <label for="size">How did the product fit?</label><br>
-                    <input type="range" name="size" id="size" list="sizes">
+                    <input type="range" name="size" id="size" class="slider" list="sizes">
                     <datalist id="sizes">
                         <option value="0" label="small"></option>
                         <option value="25"></option>
                         <option value="50" label="perfect"></option>
                         <option value="75"></option>
                         <option value="100" label="big"></option>
+                    </datalist>
+                    <br>
+                    <label for="quality">How did the product fit?</label><br>
+                    <input type="range" name="quality" id="quality" class="slider" list="qualities">
+                    <datalist id="qualities">
+                        <option value="0" label="bad"></option>
+                        <option value="25"></option>
+                        <option value="50" label="good"></option>
+                        <option value="75"></option>
+                        <option value="100" label="excellent"></option>
                     </datalist>
                 </div>
                 <div class="feedback">
