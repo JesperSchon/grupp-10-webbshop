@@ -50,6 +50,11 @@ nav{
         color: white;
         width: 70%;
         background: #405136 ;
+        
+    }
+    input::placeholder{
+        color: white;
+        opacity: 0.5;
     }
     .shop{
         @include flex(row,center,center)

@@ -56,6 +56,14 @@ nav input[type=search] {
   width: 70%;
   background: #405136;
 }
+nav input::-moz-placeholder {
+  color: white;
+  opacity: 0.5;
+}
+nav input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
 nav .shop {
   display: flex;
   flex-direction: row;
