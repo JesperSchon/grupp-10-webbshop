@@ -66,6 +66,9 @@ nav{
     border: 2px solid gray;
     padding: 10px;
     margin: 20px;
+    .checked{
+        color: $accentColor;
+    }
     input[type=range]{
         width: 200px;
         margin: 10px
@@ -112,6 +115,7 @@ nav{
 }
 
 footer{
+    padding: 15px 2px;
     background-color: $mainColor;
     position: relative;
     bottom: 0;
@@ -122,12 +126,14 @@ footer{
         p{
             color: $accentColor;
             margin: 5px;
+            font-weight: bold;
         }
         a{
             margin: 3px;
             padding: 5px;
             text-decoration: none;
             color: $extraColor;
+            font-weight: bold;
         }
         a:hover{
             background-color: #405136;

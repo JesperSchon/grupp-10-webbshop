@@ -77,6 +77,9 @@ nav .shop {
   padding: 10px;
   margin: 20px;
 }
+.review .checked {
+  color: #F0811A;
+}
 .review input[type=range] {
   width: 200px;
   margin: 10px;
@@ -122,6 +125,7 @@ nav .shop {
 }
 
 footer {
+  padding: 15px 2px;
   background-color: #02200F;
   position: relative;
   bottom: 0;
@@ -137,12 +141,14 @@ footer .info {
 footer .info p {
   color: #F0811A;
   margin: 5px;
+  font-weight: bold;
 }
 footer .info a {
   margin: 3px;
   padding: 5px;
   text-decoration: none;
   color: #F1DAA4;
+  font-weight: bold;
 }
 footer .info a:hover {
   background-color: #405136;
