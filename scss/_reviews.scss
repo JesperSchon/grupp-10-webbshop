@@ -61,6 +61,20 @@ nav{
     }
 }
 
+.review{
+    input[type=range]{
+        width: 200px;
+        margin: 10px
+    }
+    datalist{
+        @include flex(row,space-between,center);
+        writing-mode: horizontal-tb;
+        width: 200px;
+        margin: 2px 5px;
+        padding: 3px;
+    }
+}
+
 footer{
     background-color: $mainColor;
     position: relative;

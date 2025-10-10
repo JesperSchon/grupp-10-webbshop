@@ -71,6 +71,21 @@ nav .shop {
   align-items: center;
 }
 
+.review input[type=range] {
+  width: 200px;
+  margin: 10px;
+}
+.review datalist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  writing-mode: horizontal-tb;
+  width: 200px;
+  margin: 2px 5px;
+  padding: 3px;
+}
+
 footer {
   background-color: #02200F;
   position: relative;

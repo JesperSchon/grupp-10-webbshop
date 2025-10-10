@@ -30,9 +30,25 @@
 
     <main>
             <h1>Reviews</h1>
+
             <div class="review">
-                <h2>Username</h2>
+                <div class="scales">
+                    <label for="size">How did the product fit?</label><br>
+                    <input type="range" name="size" id="size" list="sizes">
+                    <datalist id="sizes">
+                        <option value="0" label="small"></option>
+                        <option value="25"></option>
+                        <option value="50" label="perfect"></option>
+                        <option value="75"></option>
+                        <option value="100" label="big"></option>
+                    </datalist>
+                </div>
+                <div class="feedback">
+                    <h2>Username</h2>
+                    <p>Donec elit felis, pharetra nec aliquet viverra, bibendum ac est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                </div>
             </div>
+
         </main>
 
     <footer>
