@@ -6,18 +6,59 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
   width: 100%;
   background-color: #02200F;
 }
 nav img {
-  height: 24px;
-  padding: 10px;
+  height: 20px;
+  padding: 5px;
   cursor: pointer;
 }
 nav button {
   border-style: none;
   background-color: unset;
+}
+nav .dropdown {
+  position: relative;
+  height: 40px;
+}
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+}
+nav .dropdown-content a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #02200F;
+  color: white;
+}
+nav .dropdown-content a:hover {
+  background-color: #405136;
+}
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+nav label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+nav input[type=search] {
+  padding: 5px;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  width: 70%;
+  background: #405136;
+}
+nav .shop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

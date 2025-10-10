@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icons/hanger.png" type="image/x-icon">
     <link rel="stylesheet" href="/scss/main.css">
     <title>Reviews</title>
 </head>
 <body>
     <nav>
-        <button title="menu"><img src="/icons/menu.png"  alt="menu"></button>
-        <label for="search"> <img src="/icons/search.png" alt="search"> <input type="search" name="search" id="search" placeholder="search"></label>
-        <button title="menu"><img src="/icons/hanger.png"  alt="logo"></button>
-        <button title="menu"><img src="/icons/heart.png"  alt="likes"></button>
-        <button title="menu"><img src="/icons/bag.png"  alt="shopping bag"></button>
+        <div class="dropdown">
+            <button title="menu" class="dropbtn"><img src="/icons/menu.png"  alt="menu"></button>
+            <div class="dropdown-content">
+                <a href="/html/startsida.html">Start</a>
+                <a href="#">Products</a>
+                <a href="/html/om-oss.html">About us</a>
+                <a href="/html/kontakt.html">Contact</a>
+                <a href="/html/referenser.html">Reviews</a>
+            </div>
+        </div>
+
+        <label for="search"><img src="/icons/search.png" alt="search" ><input type="search" name="search" id="search" placeholder="search" ></label>
+        <button title="logo"><img src="/icons/hanger.png"  alt="logo"></button>
+        <div class="shop">
+            <button title="likes"><img src="/icons/heart.png"  alt="likes"></button>
+            <button title="shopping bag"><img src="/icons/bag.png"  alt="shopping bag"></button>
+        </div>
     </nav>
 
     <footer>
