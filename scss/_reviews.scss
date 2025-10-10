@@ -87,7 +87,7 @@ main{
     }
 
     input[type=range]{
-        width: 280px;
+        width: 100%;
         margin: 10px;
     }
 
@@ -125,7 +125,7 @@ main{
     datalist{
         @include flex(row,space-between,center);
         writing-mode: horizontal-tb;
-        width: 280px;
+        width: 100%;
         margin: 2px 5px;
         padding: 2px;
     }
