@@ -1,0 +1,102 @@
+nav{
+    @include flex(row,space-between,center);
+    height: 50px;
+    width: 100%;
+    background-color: $mainColor;
+
+    img{
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+    }
+    button{
+        border-style: none;
+        background-color: unset;
+    }
+
+    .dropdown{
+        position: relative;
+        height: 40px;
+    }
+    .dropdown-content{
+            display: none;
+            position: absolute;
+        
+            a{
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            background-color: $mainColor;
+            color: white;
+            }
+            a:hover{
+                background-color: #405136;
+            }
+            span.current-page{
+                padding: 10px;
+                display: block;
+                background-color: gray;
+                color: white;
+                cursor: default;
+                pointer-events: none;
+            }
+        }
+    .dropdown:hover .dropdown-content{display: block;}
+    
+
+    label{@include flex(row, space-around,center);}
+
+    input[type=search]{
+        padding: 5px;
+        border-style: none;
+        border-radius: 10px;
+        color: white;
+        width: 70%;
+        background: #405136 ;
+        
+    }
+    input::placeholder{
+        color: white;
+        opacity: 0.5;
+    }
+    .shop{
+        @include flex(row,center,center)
+    }
+}
+
+footer{
+    padding: 15px 2px;
+    background-color: $mainColor;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    color: $accentColor;
+    .info{
+        @include flex(row, space-around, center);
+        p{
+            color: $accentColor;
+            margin: 5px;
+            font-weight: bold;
+        }
+        a{
+            margin: 3px;
+            padding: 5px;
+            text-decoration: none;
+            color: $extraColor;
+            font-weight: bold;
+        }
+        a:hover{
+            background-color: #405136;
+            border-radius: 8px;
+        }
+        span.current-page{
+            color: $extraColor;
+            font-weight: bold;
+            text-decoration: underline;
+            cursor: default;
+            pointer-events: none;
+            opacity: 60%;
+        }
+    }
+    
+}
