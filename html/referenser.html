@@ -20,7 +20,7 @@
                 <a href="#">Products</a>
                 <a href="/html/om-oss.html">About us</a>
                 <a href="/html/kontakt.html">Contact</a>
-                <a href="/html/referenser.html">Reviews</a>
+                <span class="current-page">Reviews</span>
             </div>
         </div>
 
@@ -36,15 +36,28 @@
             <h1>Reviews</h1>
 
             <div class="review">
-                <div class="stars">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+
+                <div class="feedback">
+
+                    <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </div>
+
+                    <h2>Klara</h2>
+                    <p>The dress i ordered is really nice. It feels a bit tight on me but i guess its the way its supposed to hug your body.</p>
+                    <label for="reccomend">Would you reccomend this product?</label><br>
+                    <div class="reccomend-btns">
+                        <button type="button"  id="reccomend" class="clicked" disabled>Yes</button>
+                        <button type="button"  id="reccomend" disabled >No</button>
+                    </div>
                 </div>
 
                 <div class="scales">
+
                     <label for="size">How did the product fit?</label><br>
                     <input type="range" name="size" id="size" class="slider" list="sizes" value="37" disabled>
                     <datalist id="sizes">
@@ -56,7 +69,7 @@
                     </datalist>
                     <br> <hr>
                     <label for="quality">How was the quality of the product?</label><br>
-                    <input type="range" name="quality" id="quality" class="slider" list="qualities" value="25" disabled>
+                    <input type="range" name="quality" id="quality" class="slider" list="qualities" value="60" disabled>
                     <datalist id="qualities">
                         <option value="0" label="bad"></option>
                         <option value="25"></option>
@@ -65,10 +78,7 @@
                         <option value="100" label="excellent"></option>
                     </datalist>
                 </div>
-                <div class="feedback">
-                    <h2>Username</h2>
-                    <p>Donec elit felis, pharetra nec aliquet viverra, bibendum ac est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                </div>
+                
             </div>
 
         </main>
@@ -84,9 +94,9 @@
             </div>
             <div class="Company">
                 <p>Our Company</p>
-                <a href="#">About</a><br>
-                <a href="#">Contact</a><br>
-                <a href="#">Reviews</a><br>
+                <a href="/html/om-oss.html">About</a><br>
+                <a href="/html/kontakt.html">Contact</a><br>
+                <span class="current-page" >Reviews</span><br>
             </div>
         </div>
         <p class="copyright">Copyright Grupp 10 2025</p>

@@ -40,6 +40,14 @@ nav .dropdown-content a {
 nav .dropdown-content a:hover {
   background-color: #405136;
 }
+nav .dropdown-content span.current-page {
+  padding: 10px;
+  display: block;
+  background-color: gray;
+  color: white;
+  cursor: default;
+  pointer-events: none;
+}
 nav .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -81,6 +89,11 @@ main {
   border-radius: 8px;
   padding: 10px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 .review .stars {
   display: flex;
@@ -95,20 +108,41 @@ main {
 .review .checked {
   color: #F0811A;
 }
+.review .reccomend-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.review button {
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin: 20px;
+  background-color: #ADADAD;
+  color: black;
+  font-weight: bold;
+}
+.review button.clicked {
+  background-color: #02200F;
+  color: white;
+}
+.review label {
+  font-weight: bolder;
+  text-align: center;
+}
 .review .scales {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.review input[type=range] {
+.review .scales input[type=range] {
   width: 100%;
   margin: 10px;
 }
-.review label {
-  font-weight: bolder;
-}
-.review .slider {
+.review .scales .slider {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
@@ -118,7 +152,7 @@ main {
   background: #F1DAA4;
   outline: none;
 }
-.review .slider::-webkit-slider-thumb {
+.review .scales .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 40px;
@@ -127,14 +161,14 @@ main {
   background: #02200F;
   cursor: pointer;
 }
-.review .slider::-moz-range-thumb {
+.review .scales .slider::-moz-range-thumb {
   width: 40px;
   height: 20px;
   border-radius: 10px;
   background: #02200F;
   cursor: pointer;
 }
-.review datalist {
+.review .scales datalist {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -174,4 +208,12 @@ footer .info a {
 footer .info a:hover {
   background-color: #405136;
   border-radius: 8px;
+}
+footer .info span.current-page {
+  color: #F1DAA4;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: default;
+  pointer-events: none;
+  opacity: 60%;
 }/*# sourceMappingURL=main.css.map */
