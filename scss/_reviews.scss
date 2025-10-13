@@ -5,15 +5,28 @@ body{
 }
 
 
+h1{ margin: 40px;}
+
 
 main{
     margin: 20px;
+    @include tablet{
+        @include flex(column,center,center);
+        
+    }
+
+    @include computer{
+        @include flex(row,center,center);
+        flex-wrap: wrap;
+        
+    }
 }
 
-.review{
+.review
+{
     border: 2px solid gray;
     border-radius: 8px;
-    padding: 10px;
+    padding: 30px;
     margin: 20px;
     @include flex(column,center,center);
     gap: 30px;
@@ -52,51 +65,67 @@ main{
     }
 
     .scales{
-        @include flex(column,center,center);
+        @include flex(column,center,stretch);
+        width: 100%;
+        
 
         input[type=range]{
-        width: 100%;
         margin: 10px;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 20px;
+            border-radius: 10px;
+            background: $extraColor;
+            outline: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 40px;
+            height: 20px;
+            border-radius: 10px;
+            background: $mainColor;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 40px;
+            height: 20px;
+            border-radius: 10px;
+            background: $mainColor;
+            cursor: pointer;
+        }
+        datalist{
+            @include flex(row,space-between,center);
+            writing-mode: horizontal-tb;
+            width: 100%;
+            margin: 2px 5px;
+            padding: 2px;
+        }
     }
 
-    
-
-    .slider {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 100%;
-        height: 20px;
-        border-radius: 10px;
-        background: $extraColor;
-        outline: none;
+    @include tablet{
+        @include flex(row,space-around,center);
+        width: 90%;
+        .feedback{
+            width: 40%;
+        }
+        .scales{width: 40%;}
     }
-
-    .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 40px;
-        height: 20px;
-        border-radius: 10px;
-        background: $mainColor;
-        cursor: pointer;
-}
-
-    .slider::-moz-range-thumb {
-        width: 40px;
-        height: 20px;
-        border-radius: 10px;
-        background: $mainColor;
-        cursor: pointer;
-}
-    datalist{
-        @include flex(row,space-between,center);
-        writing-mode: horizontal-tb;
-        width: 100%;
-        margin: 2px 5px;
-        padding: 2px;
+    @include computer{
+        @include flex(row,space-between,stretch);
+        max-width: 40%;
+        margin: 10px;
+        .feedback{
+            width: 40%;
+        }
+        .scales{width: 40%;}
     }
-    }
-
 }
 
 

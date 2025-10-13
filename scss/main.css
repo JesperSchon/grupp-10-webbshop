@@ -170,14 +170,35 @@ body {
   font-family: Inter;
 }
 
+h1 {
+  margin: 40px;
+}
+
 main {
   margin: 20px;
+}
+@media (width > 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (width > 970px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .review {
   border: 2px solid gray;
   border-radius: 8px;
-  padding: 10px;
+  padding: 30px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -226,10 +247,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  width: 100%;
 }
 .review .scales input[type=range] {
-  width: 100%;
   margin: 10px;
 }
 .review .scales .slider {
@@ -267,4 +288,35 @@ main {
   width: 100%;
   margin: 2px 5px;
   padding: 2px;
+}
+@media (width > 700px) {
+  .review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+  }
+  .review .feedback {
+    width: 40%;
+  }
+  .review .scales {
+    width: 40%;
+  }
+}
+@media (width > 970px) {
+  .review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 40%;
+    margin: 10px;
+  }
+  .review .feedback {
+    width: 40%;
+  }
+  .review .scales {
+    width: 40%;
+  }
 }/*# sourceMappingURL=main.css.map */
