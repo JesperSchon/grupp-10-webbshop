@@ -1,68 +1,112 @@
 nav{
-    @include flex(row,space-between,center);
-    height: 50px;
-    width: 100%;
-    background-color: $mainColor;
+        @include flex(row,space-between,center);
+        height: 50px;
+        width: 100%;
+        background-color: $mainColor;
 
-    img{
-        height: 20px;
-        padding: 5px;
-        cursor: pointer;
-    }
-    button{
-        border-style: none;
-        background-color: unset;
-    }
-
-    .dropdown{
-        position: relative;
-        height: 40px;
-    }
-    .dropdown-content{
-            display: none;
-            position: absolute;
-        
-            a{
-            padding: 10px;
-            display: block;
-            text-decoration: none;
-            background-color: $mainColor;
-            color: white;
-            }
-            a:hover{
-                background-color: #405136;
-            }
-            span.current-page{
-                padding: 10px;
-                display: block;
-                background-color: gray;
-                color: white;
-                cursor: default;
-                pointer-events: none;
-            }
+        img
+        {
+            height: 30px;
+            padding: 5px;
+            margin-left: 10px;
+            cursor: pointer;
         }
-    .dropdown:hover .dropdown-content{display: block;}
     
+        button
+        {
+            border-style: none;
+            background-color: unset;
+        }
 
-    label{@include flex(row, space-around,center);}
+        .dropdown 
+        {
+            position: relative;
+            height: 45px;
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+            
+                button
+                {
+                    padding: 10px 32px;
+                    display: block;
+                    text-decoration: none;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    background-color: $mainColor;
+                    color: white;
+                }
+                button:hover{background-color: #405136; }
 
-    input[type=search]{
-        padding: 5px;
-        border-style: none;
-        border-radius: 10px;
-        color: white;
-        width: 70%;
-        background: #405136 ;
+                button.current-page
+                {
+                    background-color: gray;
+                    color: white;
+                    cursor: default;
+                    pointer-events: none;
+                }
+            }
+            .page-view{
+                position: relative;
+                height: 45px;
+                .company-pages{
+                display: none;
+                position: absolute;
+                buttton{display:block;}    
+                }
+            }
+            
+        }
+            
+        .dropdown:hover .dropdown-content {@include flex(column,center,stretch);}
         
+        .page-view:hover .company-pages{ @include flex(column,center,stretch)}
+
+        label{@include flex(row, space-around,center);}
+
+        input[type=search]{
+            padding: 5px;
+            border-style: none;
+            border-radius: 10px;
+            color: white;
+            width: 70%;
+            background: #405136 ;
+            
+        }
+        input::placeholder{
+            color: white;
+            opacity: 0.5;
+        }
+        .shop{
+            @include flex(row,center,center)
+        }
+        
+        @include computer
+        {
+            img{height: 2.5em;}
+
+            .search{height: 1.5em;}
+
+            .dropbtn{display: none;}
+
+            .dropdown .dropdown-content
+            {
+                position: relative;
+                @include flex(row,center,center);
+                button
+                { 
+                    padding: 14px 32px;
+                    color: $extraColor;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+
+            .dropdown:hover .dropdown-content{@include flex(row,center,center)}
+        }
     }
-    input::placeholder{
-        color: white;
-        opacity: 0.5;
-    }
-    .shop{
-        @include flex(row,center,center)
-    }
-}
+
 
 footer{
     padding: 15px 2px;
