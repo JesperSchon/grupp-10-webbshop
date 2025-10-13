@@ -8,8 +8,9 @@ nav {
   background-color: #02200F;
 }
 nav img {
-  height: 20px;
+  height: 30px;
   padding: 5px;
+  margin-left: 10px;
   cursor: pointer;
 }
 nav button {
@@ -18,32 +19,52 @@ nav button {
 }
 nav .dropdown {
   position: relative;
-  height: 40px;
+  height: 45px;
 }
-nav .dropdown-content {
+nav .dropdown .dropdown-content {
   display: none;
   position: absolute;
 }
-nav .dropdown-content a {
-  padding: 10px;
+nav .dropdown .dropdown-content button {
+  padding: 10px 32px;
   display: block;
   text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
   background-color: #02200F;
   color: white;
 }
-nav .dropdown-content a:hover {
+nav .dropdown .dropdown-content button:hover {
   background-color: #405136;
 }
-nav .dropdown-content span.current-page {
-  padding: 10px;
-  display: block;
+nav .dropdown .dropdown-content button.current-page {
   background-color: gray;
   color: white;
   cursor: default;
   pointer-events: none;
 }
-nav .dropdown:hover .dropdown-content {
+nav .dropdown .page-view {
+  position: relative;
+  height: 45px;
+}
+nav .dropdown .page-view .company-pages {
+  display: none;
+  position: absolute;
+}
+nav .dropdown .page-view .company-pages buttton {
   display: block;
+}
+nav .dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+nav .page-view:hover .company-pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }
 nav label {
   display: flex;
@@ -72,6 +93,36 @@ nav .shop {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (width > 970px) {
+  nav img {
+    height: 2.5em;
+  }
+  nav .search {
+    height: 1.5em;
+  }
+  nav .dropbtn {
+    display: none;
+  }
+  nav .dropdown .dropdown-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .dropdown .dropdown-content button {
+    padding: 14px 32px;
+    color: #F1DAA4;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  nav .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 footer {
