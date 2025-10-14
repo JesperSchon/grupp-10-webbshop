@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/icons/hanger.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/scss/main.css">
+  <link rel="stylesheet" href="/scss/kontakt.css">
+  <title>Reviews</title>
+</head>
+
+<body>
+  <!-- header -->
+  <nav>
+    <div class="dropdown">
+      <button type="button" title="menu" class="dropbtn">
+        <img src="/icons/menu.png" alt="menu">
+      </button>
+      <div class="dropdown-content">
+        <button type="button">Start</button>
+        <button type="button">Woman</button>
+        <button type="button">Men</button>
+        <button type="button">Kids</button>
+        <div class="page-view">
+          <button type="button">Our Company</button>
+          <div class="company-pages">
+            <button type="button">About us</button>
+            <button type="button" class="current-page">Contact</button>
+            <button type="button">Reviews</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <label for="search">
+      <img src="/icons/search.png" alt="search" class="search">
+      <input type="search" name="search" id="search" placeholder="search">
+    </label>
+    <button type="button" title="logo"><img src="/icons/hanger.png" alt="logo" class="logo"></button>
+    <div class="shop">
+      <button type="button" title="likes"><img src="/icons/heart.png" alt="likes"></button>
+      <button type="button" title="shopping bag"><img src="/icons/bag.png" alt="shopping bag"></button>
+    </div>
+  </nav>
+
+  <!-- main content -->
+  <main>
+    <section class="contact-intro">
+      <p>Mode är personligt — det berättar din historia.</p>
+      <p>Vi designar med omtanke och kombinerar stil, komfort och personlighet. Vårt team finns här för att hjälpa dig att hitta plagg som får dig att känna dig säker och inspirerad.</p>
+      <p>Oavsett om du har en fråga, vill ha stilråd eller samarbeta vi vill gärna höra från dig.</p>
+    </section>
+
+    <section class="contact-card">
+      <div>
+        <div class="contact-card-text">
+          <h2>Contact</h2>
+          <p>Fyll i formuläret nedan för att kontakta oss, så återkommer vi så snart vi kan med svar på dina frågor.</p>
+          <p>Vi uppskattar varje meddelande och gör vårt bästa för att ge dig den hjälp du behöver.</p>
+        </div>
+
+        <div class="contact-card-form">
+          <form action="#" method="post">
+            <label for="fname">Förnamn</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="lname">Efternamn</label>
+            <input type="text" id="lname" name="lname">
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Meddelande*</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <div class="form-row">
+                <div class="checkbox-wrapper">
+                   <input class="checkbox-input" type="checkbox" id="policy" name="policy">
+                   <label for="policy">Jag godkänner <a class="policy-link" href="#">Integritetspolicyn</a></label>
+                </div>
+               <div class="submit-wrapper">
+                 <button type="submit">Skicka in</button>
+               </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <h3>Vårt team är här för att hjälpa</h3>
+      <div class="team-container">
+        <div class="team-card">
+          <div class="team-card-img-wrapper">
+            <img src="/icons/person.png" alt="person">
+          </div>
+          <h4>Emma Lindström</h4>
+          <p>Kundservice & Stilrådgivning</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-img-wrapper">
+            <img src="/icons/person.png" alt="person">
+          </div>
+          <h4>Noah Berg</h4>
+          <p>Kundservice & Stilrådgivning</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-img-wrapper">
+            <img src="/icons/person.png" alt="person">
+          </div>
+          <h4>Thomas Li</h4>
+          <p>Kundservice & Stilrådgivning</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="info">
+      <img src="/icons/badge.png" alt="logo of the company that says: clothing for the 10s" height="77px">
+      <div class="products">
+        <p>Products</p>
+        <a href="#">Women</a><br>
+        <a href="#">Men</a><br>
+        <a href="#">Kids</a><br>
+      </div>
+      <div class="Company">
+        <p>Our Company</p>
+        <a href="#">About</a><br>
+        <span class="current-page">Contact</span><br>
+        <a href="referenser.html">Reviews</a><br>
+      </div>
+    </div>
+    <p class="copyright">Copyright Grupp 10 2025</p>
+  </footer>
+</body>
+</html>
