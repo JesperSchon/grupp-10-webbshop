@@ -31,6 +31,11 @@ main{
     @include flex(column,center,center);
     gap: 30px;
 
+    .img-rate{
+        @include flex(row,start,center);
+        img{border-radius: 8px;}
+    }
+
     .stars{
         @include flex(row,center,center);
         margin:15px;
