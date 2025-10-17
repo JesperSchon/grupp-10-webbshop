@@ -81,6 +81,10 @@ nav input[type=search] {
   width: 70%;
   background: #405136;
 }
+nav input::-moz-placeholder {
+  color: white;
+  opacity: 0.5;
+}
 nav input::placeholder {
   color: white;
   opacity: 0.5;
@@ -406,7 +410,8 @@ h1 {
 }
 .review .scales .slider {
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   width: 100%;
   height: 20px;
   border-radius: 10px;
@@ -657,6 +662,4 @@ h1 {
   .about-page section {
     padding: 3rem 4rem;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
