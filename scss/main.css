@@ -164,7 +164,12 @@ footer .info span.current-page {
   opacity: 60%;
 }
 
-button {
+.buy-the-look {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.buy-the-look button {
   margin: 5px;
   font-weight: bolder;
   border-style: none;
@@ -173,24 +178,20 @@ button {
   border-radius: 5px;
   padding: 5px;
 }
-button:hover {
+.buy-the-look button:hover {
   background-color: #F0811A;
 }
-
-.buy-the-look {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 .buy-the-look .outfit {
+  scroll-snap-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: white;
   height: 450px;
-  margin: 20px;
+  padding: 20px;
+  margin: 15px;
+  position: relative;
 }
 .buy-the-look .outfit img {
   height: 300px;
@@ -209,36 +210,48 @@ button:hover {
   border-radius: 10px;
   box-shadow: 0 0px 8px 8px rgba(0, 0, 0, 0.405);
   position: absolute;
+  bottom: 30%;
+  left: 35%;
 }
 .buy-the-look .outfit .point:first-of-type {
-  top: 230px;
-  left: 650px;
-}
-.buy-the-look .outfit .point:last-of-type {
-  top: 350px;
-  left: 650px;
+  top: 30%;
+  left: 45%;
 }
 .buy-the-look .outfit .point .reveal {
   display: none;
 }
 .buy-the-look .outfit .point:hover .reveal {
-  width: 400px;
+  width: 100px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  gap: 10px;
+}
+.buy-the-look .outfit .point:hover span {
+  text-transform: capitalize;
 }
 .buy-the-look .outfit .point:hover p {
   font-weight: bold;
 }
 .buy-the-look .outfit .point:hover img {
-  height: 60px;
+  height: 50px;
 }
 
+.products button {
+  margin: 5px;
+  font-weight: bolder;
+  border-style: none;
+  border: 2px solid #F0811A;
+  background-color: rgba(234, 135, 6, 0.5294117647);
+  border-radius: 5px;
+  padding: 5px;
+}
+.products button:hover {
+  background-color: #F0811A;
+}
 .products .gallery {
   padding: 10px;
   display: flex;
