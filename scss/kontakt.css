@@ -70,7 +70,6 @@ section {
 .contact-intro {
   background: linear-gradient(135deg, #F1DAA4 0%, #FFF7EA 100%);
   background-size: cover;
-  /* layout controlled by inner flex for better control */
   text-align: left;
   color: #02200F;
   padding: 48px 20px;
@@ -96,7 +95,6 @@ section {
   margin-right: auto;
 }
 
-/* Intro layout: text left, image right */
 .contact-intro .intro-row {
   display: flex;
   align-items: center;
@@ -152,7 +150,6 @@ section {
   flex: 1;
 }
 
-/* Decorative image inside the contact card text column */
 .contact-card-art {
   margin-top: 18px;
   display: flex;
@@ -351,9 +348,7 @@ section {
     padding: 10px;
   }
 
-  /* On small screens keep the image to the right by keeping a row layout
-     and explicitly ordering/pushing the image to the end. This keeps the
-     DOM order (text first) while ensuring the image sits to the right. */
+
   .contact-intro .intro-row {
     flex-direction: row;
     align-items: flex-start;
@@ -370,7 +365,7 @@ section {
     flex: 0 0 36%;
     max-width: 140px;
     justify-content: flex-end;
-    margin-left: auto; /* push image to the right edge */
+    margin-left: auto;
   }
 
   .card-inner {
@@ -392,7 +387,6 @@ section {
     max-width: 350px;
   }
 
-  /* ensure decorative image scales on small screens */
   .contact-card-art img {
     max-width: 140px;
   }
