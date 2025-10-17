@@ -1,10 +1,68 @@
+
+button{
+    margin: 5px;
+    font-weight: bolder;
+    border-style: none;
+    border: 2px solid $accentColor;
+    background-color: #ea870687;
+    border-radius: 5px;
+    padding: 5px;
+    &:hover{ background-color: $accentColor;}
+}
+
+.buy-the-look{
+    @include flex(row,center,center);
+        .outfit{
+            @include flex(column,center,center);
+            background-color: white;
+            height: 450px;
+            margin: 20px;
+            img{ height: 300px;}
+            .price{@include flex(row,space-between,center); gap:10px;}
+            .point{
+                background-color: white;
+                height: 20px;
+                width: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0px 8px 8px rgba(0, 0, 0, 0.405);
+                position: absolute;
+                
+                &:first-of-type{
+                    top:230px;
+                    left: 650px;
+                }
+                &:last-of-type{
+                    top:350px;
+                    left: 650px;
+                }
+                .reveal{display: none;}
+                &:hover{ 
+                    
+                    .reveal{
+                        width:400px;
+                        padding: 10px;
+                        @include flex(row,center,center);
+                        background-color: white;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                        gap: 10px;
+                    }
+                    p{font-weight: bold;}
+
+                    img{
+                        height: 60px;
+                    }
+                    
+                }
+            }
+        }
+    }
+
 .products{
     .gallery{
-        // margin: 10px;
         padding: 10px;
         @include flex(row,space-around,center);
         flex-wrap: wrap;
-        background-color: #ffffff88;
+        background-color: #ffffff;
     }
 
     .gallery-item{
@@ -27,17 +85,6 @@
             }
         .desc{
             margin: 5px;
-            
-            button{
-                margin: 5px;
-                font-weight: bolder;
-                border-style: none;
-                border: 2px solid $accentColor;
-                background-color: #ea870687;
-                border-radius: 5px;
-                padding: 5px;
-                &:hover{ background-color: $accentColor;}
-            }
         }
         @include tablet{
             width: 150px;
