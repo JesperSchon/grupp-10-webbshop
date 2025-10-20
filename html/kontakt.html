@@ -44,42 +44,65 @@
 
   <!-- main content -->
   <main>
-    <section class="contact-intro">
-      <p>Mode är personligt — det berättar din historia.</p>
-      <p>Vi designar med omtanke och kombinerar stil, komfort och personlighet. Vårt team finns här för att hjälpa dig att hitta plagg som får dig att känna dig säker och inspirerad.</p>
-      <p>Oavsett om du har en fråga, vill ha stilråd eller samarbeta vi vill gärna höra från dig.</p>
+    <section class="contact-intro" aria-label="intro">
+      <div class="container">
+        <div class="intro-row">
+          <div class="intro-text">
+            <h1 class="page-title">Contact us</h1>
+            <p class="lead">Fashion is personal — it tells your story.</p>
+            <p>We design with care and combine style, comfort and personality. Our team is here to help you find pieces that make you feel confident and inspired.</p>
+            <p>Whether you have a question, want styling advice or want to collaborate, we'd love to hear from you.</p>
+          </div>
+
+          <div class="intro-image" aria-hidden="true">
+            <img src="/icons/contact-icon.png">
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="contact-card">
-      <div>
+    <section class="contact-card" aria-label="contact form">
+      <div class="container card-inner">
         <div class="contact-card-text">
-          <h2>Contact</h2>
-          <p>Fyll i formuläret nedan för att kontakta oss, så återkommer vi så snart vi kan med svar på dina frågor.</p>
-          <p>Vi uppskattar varje meddelande och gör vårt bästa för att ge dig den hjälp du behöver.</p>
+          <h2>Get in touch</h2>
+          <p>Please fill out the form and we'll reply as soon as possible.</p>
+          <p class="muted">For order-related enquiries, include your order number.</p>
+          <div class="contact-card-art" aria-hidden="true">
+            <img src="/icons/contact-us-icon.png" alt="decorative">
+          </div>
         </div>
 
-        <div class="contact-card-form">
+        <div class="contact-card-form" aria-hidden="false">
           <form action="#" method="post">
-            <label for="fname">Förnamn</label>
-            <input type="text" id="fname" name="fname">
+            <div class="grid-row">
+              <div class="field">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+              </div>
+              <div class="field">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+              </div>
+            </div>
 
-            <label for="lname">Efternamn</label>
-            <input type="text" id="lname" name="lname">
+            <div class="field">
+              <label for="email">Email<span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
 
-            <label for="email">Email*</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Meddelande*</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <div class="field">
+              <label for="message">Message<span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
 
             <div class="form-row">
-                <div class="checkbox-wrapper">
-                   <input class="checkbox-input" type="checkbox" id="policy" name="policy">
-                   <label for="policy">Jag godkänner <a class="policy-link" href="#">Integritetspolicyn</a></label>
-                </div>
-               <div class="submit-wrapper">
-                 <button type="submit">Skicka in</button>
-               </div>
+              <div class="checkbox-wrapper">
+                <input class="checkbox-input" type="checkbox" id="policy" name="policy" required>
+                <label for="policy">I accept the <a class="policy-link" href="#">Privacy Policy</a></label>
+              </div>
+              <div class="submit-wrapper">
+                <button type="submit" class="btn-primary">Send message</button>
+              </div>
             </div>
           </form>
         </div>
@@ -87,34 +110,59 @@
     </section>
 
     <section class="team-section">
-      <h3>Vårt team är här för att hjälpa</h3>
+      <h3 class="our-team-text">Our team is here to help</h3>
       <div class="team-container">
         <div class="team-card">
           <div class="team-card-img-wrapper">
-            <img src="/icons/person.png" alt="person">
+            <img src="/icons/customer-service-support.svg" alt="person">
           </div>
           <h4>Emma Lindström</h4>
-          <p>Kundservice & Stilrådgivning</p>
+          <p>Customer Service & Styling</p>
         </div>
 
         <div class="team-card">
           <div class="team-card-img-wrapper">
-            <img src="/icons/person.png" alt="person">
+            <img src="/icons/customer-service-man.svg" alt="person">
+          </div>
+          <h4>Johan Wrangö</h4>
+          <p>Customer Support</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-img-wrapper">
+            <img src="/icons/customer-service-support.svg" alt="person">
+          </div>
+          <h4>Lina Andersson</h4>
+          <p>Payments</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-img-wrapper">
+            <img src="/icons/customer-service-man.svg" alt="person">
           </div>
           <h4>Noah Berg</h4>
-          <p>Kundservice & Stilrådgivning</p>
+          <p>Orders & Delivery</p>
         </div>
 
         <div class="team-card">
           <div class="team-card-img-wrapper">
-            <img src="/icons/person.png" alt="person">
+            <img src="/icons/customer-service-support.svg" alt="person">
+          </div>
+          <h4>Emy Karlsson</h4>
+          <p>Product Support</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-img-wrapper">
+            <img src="/icons/customer-service-man.svg" alt="person">
           </div>
           <h4>Thomas Li</h4>
-          <p>Kundservice & Stilrådgivning</p>
+          <p>Additional Support</p>
         </div>
       </div>
     </section>
   </main>
+
 
   <!-- footer -->
   <footer>
