@@ -23,7 +23,7 @@
         background-color: white;
         height: 450px;
         padding: 20px;
-        margin: 15px;
+        margin: 35px 15px;
         position: relative;
         img{ height: 300px;}
         .price{@include flex(row,space-between,center); gap:10px;}
