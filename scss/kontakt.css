@@ -14,30 +14,7 @@ html, body {
 }
 
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
 
-nav .dropdown,
-nav label,
-nav button.logo,
-nav .shop {
-  display: flex;
-  align-items: center;
-}
-
-nav label {
-  gap: 5px;
-}
-
-nav .shop {
-  gap: 10px;
-}
 
 
 
@@ -409,29 +386,27 @@ section {
   }
 }
 
-html {
-  overflow-x: clip;
-}
+  nav img {
+    height: 50px; 
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  nav .search {
+    height: 2.15em;
+  }
+
+  @media (max-width: 768px) {
+    nav img {
+      height: 40px; 
+    }
+
+    nav .search {
+      height: 2.5em;
+    }
+  }
 
 
-nav button.logo img,
-nav .shop img {
-  width: 42px; 
-  height: 42px;
-  object-fit: contain;
-}
-
-nav button.logo img {
-  width: 54px;
-  height: 54px;
-}
-
-nav label img.search {
-  width: 33px;
-  padding: 5px;
-  height: 33px;
-  margin-left: 10px;
-  cursor: pointer;
-}
 
 
