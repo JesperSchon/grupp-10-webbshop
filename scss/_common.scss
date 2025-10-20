@@ -12,7 +12,7 @@ nav{
             cursor: pointer;
         }
     
-        button
+        a
         {
             border-style: none;
             background-color: unset;
@@ -22,12 +22,12 @@ nav{
         {
             position: relative;
             height: 45px;
-            
+            z-index: 10;
             .dropdown-content {
                 display: none;
                 position: absolute;
             
-                button
+                a
                 {
                     padding: 10px 32px;
                     display: block;
@@ -37,9 +37,9 @@ nav{
                     background-color: $mainColor;
                     color: white;
                 }
-                button:hover{background-color: #405136; }
+                a:hover{background-color: #405136; }
 
-                button.current-page
+                a.current-page
                 {
                     background-color: gray;
                     color: white;
@@ -53,7 +53,7 @@ nav{
                 .company-pages{
                 display: none;
                 position: absolute;
-                buttton{display:block;}    
+                a{display:block;}    
                 }
             }
             
@@ -94,7 +94,7 @@ nav{
             {
                 position: relative;
                 @include flex(row,center,center);
-                button
+                a
                 { 
                     padding: 14px 32px;
                     color: $extraColor;

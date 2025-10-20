@@ -14,19 +14,20 @@ nav img {
   margin-left: 10px;
   cursor: pointer;
 }
-nav button {
+nav a {
   border-style: none;
   background-color: unset;
 }
 nav .dropdown {
   position: relative;
   height: 45px;
+  z-index: 10;
 }
 nav .dropdown .dropdown-content {
   display: none;
   position: absolute;
 }
-nav .dropdown .dropdown-content button {
+nav .dropdown .dropdown-content a {
   padding: 10px 32px;
   display: block;
   text-decoration: none;
@@ -35,10 +36,10 @@ nav .dropdown .dropdown-content button {
   background-color: #02200F;
   color: white;
 }
-nav .dropdown .dropdown-content button:hover {
+nav .dropdown .dropdown-content a:hover {
   background-color: #405136;
 }
-nav .dropdown .dropdown-content button.current-page {
+nav .dropdown .dropdown-content a.current-page {
   background-color: gray;
   color: white;
   cursor: default;
@@ -52,7 +53,7 @@ nav .dropdown .page-view .company-pages {
   display: none;
   position: absolute;
 }
-nav .dropdown .page-view .company-pages buttton {
+nav .dropdown .page-view .company-pages a {
   display: block;
 }
 nav .dropdown:hover .dropdown-content {
@@ -112,7 +113,7 @@ nav .shop {
     justify-content: center;
     align-items: center;
   }
-  nav .dropdown .dropdown-content button {
+  nav .dropdown .dropdown-content a {
     padding: 14px 32px;
     color: #F1DAA4;
     font-weight: bold;
