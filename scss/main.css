@@ -326,6 +326,10 @@ h1 {
   margin: 40px;
 }
 
+h1, h2 {
+  font-family: "Rubik", sans-serif;
+}
+
 .review-site {
   margin: 20px;
 }
@@ -402,6 +406,7 @@ h1 {
   color: white;
 }
 .review label {
+  font-family: Rubik;
   font-weight: bolder;
   text-align: center;
 }
