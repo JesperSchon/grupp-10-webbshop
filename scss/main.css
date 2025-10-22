@@ -304,6 +304,29 @@ footer .info span.current-page {
 .products .gallery-item img {
   height: 100px;
 }
+
+.black-friday {
+  color: #000000;
+  padding: 30px 10px;
+}
+.black-friday .bf-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.black-friday .bf-grid {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.black-friday .gallery-item {
+  background: transparent;
+  color: #02200F;
+}
 .products .gallery-item span {
   text-align: center;
   font-weight: bold;
