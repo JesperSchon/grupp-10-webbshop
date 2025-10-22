@@ -120,6 +120,5 @@
     box-shadow: 0 8px 20px rgba(0,0,0,.08);
   }
   
-  /* lite extra luft på desktop */
   @include computer { .about-page section { padding: 3rem 4rem; } }
   

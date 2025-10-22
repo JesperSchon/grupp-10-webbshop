@@ -1,0 +1,149 @@
+
+.home-page {
+  background-color: $extraColor;
+  color: $mainColor;
+}
+
+.home-promo {
+  padding: clamp(20px, 4vw, 56px) 16px;
+  background: $extraColor;
+
+  .home-promo-card {
+    max-width: 1100px;
+    margin-inline: auto;
+    background: #fff;
+    border: 2px solid $mainColor;
+    border-radius: 16px;
+    box-shadow: 0 10px 26px rgba(0,0,0,.08);
+
+    display: grid;
+    grid-template-columns: 1fr; 
+    overflow: hidden;
+  }
+
+  .home-promo-media {
+    position: relative;
+    aspect-ratio: 16 / 10; 
+    min-height: 220px;
+
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;        
+      object-position: center;  
+      display: block;
+    }
+  }
+
+  .home-promo-content {
+    padding: clamp(18px, 3.5vw, 36px);
+    display: grid;
+    align-content: center;
+    gap: 14px;
+    text-align: left;
+
+    h1 {
+      margin: 0;
+      font-family: "Rubik", sans-serif;
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      line-height: 1.15;
+      letter-spacing: .2px;
+    }
+
+    p {
+      margin: 0;
+      max-width: 60ch;
+      line-height: 1.7;
+    }
+
+    .home-promo-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;  
+      margin-top: 4px;
+    }
+  }
+
+  @media (min-width: $large) {
+    .home-promo-card {
+      grid-template-columns: 1.55fr 1fr;
+      align-items: stretch;
+    }
+
+    .home-promo-media {
+      aspect-ratio: auto;
+      height: 420px;            
+      min-height: 380px;
+    }
+
+    .home-promo-content {
+      padding: clamp(24px, 3.6vw, 48px);
+    }
+  }
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 22px;
+  border-radius: 999px;                
+  font-weight: 700;
+  letter-spacing: .2px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  transition:
+    transform .16s ease,
+    box-shadow .16s ease,
+    background-color .16s ease,
+    color .16s ease,
+    border-color .16s ease;
+
+  &:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.12); }
+  &:active { transform: translateY(-1px) scale(.997); box-shadow: 0 6px 14px rgba(0,0,0,.10); }
+  &:focus-visible { outline: none; box-shadow: 0 0 0 4px rgba($accentColor,.18); }
+}
+
+.home-button--primary {
+  background: $mainColor;
+  color: $extraColor;
+  border-color: $mainColor;
+}
+
+.home-button--outline {
+  background: transparent;
+  color: $mainColor;
+  border-color: $mainColor;
+}
+
+.home-button--primary:hover,
+.home-button--primary:focus-visible {
+  background: lighten($mainColor, 5%);
+  border-color: lighten($mainColor, 5%);
+}
+
+.home-button--outline:hover,
+.home-button--outline:focus-visible {
+  background: $mainColor;
+  color: $extraColor;
+}
+
+.home-button--accent {
+  background: $accentColor;
+  color: #fff;
+  border-color: $accentColor;
+
+  &:hover,
+  &:focus-visible {
+    background: darken($accentColor, 6%);
+    border-color: darken($accentColor, 6%);
+  }
+}
