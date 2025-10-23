@@ -252,16 +252,20 @@ footer .info span.current-page {
 
 /* Flytta på points individuellt */
 .buy-the-look .outfit .point.point1  { top: 30%; left: 45%; }
-.buy-the-look .outfit .point.point2  { bottom: 30%; left: 35%; }
-.buy-the-look .outfit .point.point3  { top: 32%; left: 40%; }
-.buy-the-look .outfit .point.point4  { top: 28%; left: 55%; }
-.buy-the-look .outfit .point.point5  { top: 34%; left: 30%; }
-.buy-the-look .outfit .point.point6  { top: 36%; left: 50%; }
-.buy-the-look .outfit .point.point7  { top: 33%; left: 48%; }
-.buy-the-look .outfit .point.point8  { top: 31%; left: 42%; }
-.buy-the-look .outfit .point.point9  { top: 29%; left: 38%; }
-.buy-the-look .outfit .point.point10 { top: 35%; left: 60%; }
-.buy-the-look .outfit .point.point11 { top: 27%; left: 52%; }
+.buy-the-look .outfit .point.point2  { bottom: 45%; left: 38%; }
+.buy-the-look .outfit .point.point3  { top: 52%; left: 40%; }
+.buy-the-look .outfit .point.point4  { top: 28%; left: 50%; }
+.buy-the-look .outfit .point.point5  { top: 38%; left: 45%; }
+.buy-the-look .outfit .point.point6  { top: 72%; left: 57%; }
+.buy-the-look .outfit .point.point7  { top: 43%; left: 44%; }
+.buy-the-look .outfit .point.point8  { top: 37%; left: 53%; }
+.buy-the-look .outfit .point.point9  { top: 70%; left: 38%; }
+.buy-the-look .outfit .point.point10 { top: 50%; left: 40%; }
+.buy-the-look .outfit .point.point11 { top: 72%; left: 52%; }
+.buy-the-look .outfit .point.point12  { top: 35%; left: 57%; }
+.buy-the-look .outfit .point.point13  { top: 71%; left: 64%; }
+.buy-the-look .outfit .point.point14  { top: 71%; left: 64%; }
+
 
 .products button {
   margin: 5px;
@@ -850,3 +854,137 @@ h1, h2 {
   background: rgb(220.9286885246, 113.8409836066, 14.4713114754);
   border-color: rgb(220.9286885246, 113.8409836066, 14.4713114754);
 }/*# sourceMappingURL=main.css.map */
+
+
+.product-page {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px);
+  padding-bottom: 40px;
+  position: relative; 
+}
+.product-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  background: #fff;
+  border: 2px solid #02200F;
+  border-radius: 12px;
+  padding: 28px;
+  min-height: 420px;
+  max-width: 1000px;
+  width: calc(100% - 56px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+.product-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-media img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.product-info h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.product-info p {
+  margin: 0;
+  color: #333;
+}
+.price-row {
+  display:flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #02200F;
+}
+.qty {
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+.qty button {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.qty input {
+  width: 50px;
+  text-align:center;
+  padding:6px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+.actions {
+  display:flex;
+  gap:12px;
+  margin-top:8px;
+}
+.actions .btn {
+  padding:10px 14px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-weight:700;
+}
+.actions .buy {
+  --btn-bg: #F0811A;
+  --btn-color: #fff;
+  --btn-border: none;
+}
+.actions .cart {
+  --btn-bg: #fff;
+  --btn-color: #02200F;
+  --btn-border: 2px solid #02200F;
+}
+
+/* Responsive layout for product page */
+@media (min-width: 800px) {
+  .product-card {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .product-media img {
+    max-height: 420px;
+    object-fit: contain;
+  }
+}
+.btn-primary {
+  background: var(--btn-bg, #F0811A);
+  color: var(--btn-color, #02200F);
+  border-radius: 12px;
+  border: var(--btn-border, none);
+  padding: 12px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(240,129,26,0.12);
+  transition: transform 160ms ease, box-shadow 160ms ease, opacity 120ms ease;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(240,129,26,0.16); }
+
+
+.product-page .back-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 20;
+  padding: 10px 12px;
+  font-weight: 700;
+  border-radius: 10px;
+  --btn-bg: #fff;
+  --btn-color: #02200F;
+  --btn-border: 2px solid #02200F;
+}
