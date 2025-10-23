@@ -3,37 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="/icons/hanger.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../icons/hanger.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/scss/main.css">
+  <link rel="stylesheet" href="../scss/main.css">
   <title>Product</title>
 </head>
 <body>
   <nav>
     <div class="dropdown">
-      <a title="menu" class="dropbtn"><img src="/icons/menu.png"  alt="menu"></a>
+  <a title="menu" class="dropbtn"><img src="../icons/menu.png"  alt="menu"></a>
       <div class="dropdown-content">
-        <a href="/html/startsida.html">Start</a>
-        <a href="/html/dam-produktsida.html">Women</a>
-        <a href="/html/herr-produktsida.html">Men</a>
+  <a href="../index.html">Start</a>
+  <a href="dam-produktsida.html">Women</a>
+  <a href="herr-produktsida.html">Men</a>
         <div class="page-view">
           <a>Our Company</a>
           <div class="company-pages">
-            <a href="/html/om-oss.html">About us</a>
-            <a href="/html/kontakt.html">Contact</a>
-            <a href="/html/referenser.html">Reviews</a>
+            <a href="om-oss.html">About us</a>
+            <a href="kontakt.html">Contact</a>
+            <a href="referenser.html">Reviews</a>
           </div>
         </div>
       </div>
     </div>
 
-    <label for="search"><img src="/icons/search.png" alt="search" class="search" ><input type="search" name="search" id="search" placeholder="search" ></label>
-    <a title="logo"><img src="/icons/hanger.png"  alt="logo" class="logo"></a>
+    <label for="search"><img src="../icons/search.png" alt="search" class="search" ><input type="search" name="search" id="search" placeholder="search" ></label>
+    <a title="logo"><img src="../icons/hanger.png"  alt="logo" class="logo"></a>
     <div class="shop">
-      <a title="likes"><img src="/icons/heart.png"  alt="likes"></a>
-      <a title="shopping bag"><img src="/icons/bag.png"  alt="shopping bag"></a>
+      <a title="likes"><img src="../icons/heart.png"  alt="likes"></a>
+      <a title="shopping bag"><img src="../icons/bag.png"  alt="shopping bag"></a>
     </div>
   </nav>
 
@@ -66,26 +66,26 @@
   <!-- JavaScript för att dynamiskt ladda produktinformation -->
   <script>
     const products = {
-      h1: { id: 'h1', title: 'Cat patterned button up', img: '/herr-produkter/1.png', price: 200, desc: 'Cute cat-patterned shirt.' },
-      h2: { id: 'h2', title: 'Striped button up crop', img: '/herr-produkter/2.png', price: 100, desc: 'Short striped shirt.' },
-      h3: { id: 'h3', title: 'High waist bellbottom jeans', img: '/herr-produkter/3.webp', price: 240, desc: 'Retro bellbottoms.' },
-      h4: { id: 'h4', title: 'Mini dress', img: '/herr-produkter/4.png', price: 350, desc: 'Mini dress.' },
-      h5: { id: 'h5', title: 'Blouse with bow', img: '/herr-produkter/5.webp', price: 250, desc: 'Elegant blouse with bow.' },
-      h6: { id: 'h6', title: 'Long velvet skirt', img: '/herr-produkter/6.png', price: 420, desc: 'Velvety long skirt.' },
-      h7: { id: 'h7', title: 'Sleeveless maxi dress', img: '/herr-produkter/27.webp', price: 350, desc: 'Flowy maxi dress.' },
-      h8: { id: 'h8', title: 'Skinny black jeans', img: '/herr-produkter/26.jpg', price: 270, desc: 'Classic skinny jeans.' },
-      h9: { id: 'h9', title: 'Baggy jeans', img: '/herr-produkter/8.png', price: 290, desc: 'Comfortable baggy jeans.' },
-      h10: { id: 'h10', title: 'Turtle neck long sleeve shirt', img: '/herr-produkter/10.png', price: 180, desc: 'Warm turtle neck.' },
-      h11: { id: 'h11', title: 'Sinched blazer', img: '/herr-produkter/11.png', price: 200, desc: 'Tailored blazer.' },
-      h12: { id: 'h12', title: 'Striped trousers', img: '/herr-produkter/25.png', price: 270, desc: 'Striped trousers.' },
-      h13: { id: 'h13', title: 'Long cardigan', img: '/herr-produkter/24.jpg', price: 360, desc: 'Cozy cardigan.' },
-      h14: { id: 'h14', title: 'Distressed cottagecore', img: '/herr-produkter/14.png', price: 120, desc: 'Cottagecore style.' },
-      h15: { id: 'h15', title: 'Pleated skirt', img: '/herr-produkter/15.webp', price: 400, desc: 'Pleated skirt.' },
-      h16: { id: 'h16', title: 'Corset victorian dress', img: '/herr-produkter/17.webp', price: 700, desc: 'Victorian style corset dress.' },
-      h17: { id: 'h17', title: 'Farm sweater', img: '/herr-produkter/17.png', price: 500, desc: 'Warm farm sweater.' },
-      h18: { id: 'h18', title: 'Dress shirt', img: '/herr-produkter/18.jpg', price: 200, desc: 'Formal dress shirt.' },
-      h19: { id: 'h19', title: 'Cardigan', img: '/herr-produkter/23.png', price: 330, desc: 'Cozy cardigan.' },
-      h20: { id: 'h20', title: 'Fox embroidered sweater', img: '/herr-produkter/22.jpg', price: 700, desc: 'Embroidered fox sweater.' }
+  h1: { id: 'h1', title: 'Cat patterned button up', img: '../herr-produkter/1.png', price: 200, desc: 'Cute cat-patterned shirt.' },
+  h2: { id: 'h2', title: 'Striped button up crop', img: '../herr-produkter/2.png', price: 100, desc: 'Short striped shirt.' },
+  h3: { id: 'h3', title: 'High waist bellbottom jeans', img: '../herr-produkter/3.webp', price: 240, desc: 'Retro bellbottoms.' },
+  h4: { id: 'h4', title: 'Mini dress', img: '../herr-produkter/4.png', price: 350, desc: 'Mini dress.' },
+  h5: { id: 'h5', title: 'Blouse with bow', img: '../herr-produkter/5.webp', price: 250, desc: 'Elegant blouse with bow.' },
+  h6: { id: 'h6', title: 'Long velvet skirt', img: '../herr-produkter/6.png', price: 420, desc: 'Velvety long skirt.' },
+  h7: { id: 'h7', title: 'Sleeveless maxi dress', img: '../herr-produkter/27.webp', price: 350, desc: 'Flowy maxi dress.' },
+  h8: { id: 'h8', title: 'Skinny black jeans', img: '../herr-produkter/26.jpg', price: 270, desc: 'Classic skinny jeans.' },
+  h9: { id: 'h9', title: 'Baggy jeans', img: '../herr-produkter/8.png', price: 290, desc: 'Comfortable baggy jeans.' },
+  h10: { id: 'h10', title: 'Turtle neck long sleeve shirt', img: '../herr-produkter/10.png', price: 180, desc: 'Warm turtle neck.' },
+  h11: { id: 'h11', title: 'Sinched blazer', img: '../herr-produkter/11.png', price: 200, desc: 'Tailored blazer.' },
+  h12: { id: 'h12', title: 'Striped trousers', img: '../herr-produkter/25.png', price: 270, desc: 'Striped trousers.' },
+  h13: { id: 'h13', title: 'Long cardigan', img: '../herr-produkter/24.jpg', price: 360, desc: 'Cozy cardigan.' },
+  h14: { id: 'h14', title: 'Distressed cottagecore', img: '../herr-produkter/14.png', price: 120, desc: 'Cottagecore style.' },
+  h15: { id: 'h15', title: 'Pleated skirt', img: '../herr-produkter/15.webp', price: 400, desc: 'Pleated skirt.' },
+  h16: { id: 'h16', title: 'Corset victorian dress', img: '../herr-produkter/17.webp', price: 700, desc: 'Victorian style corset dress.' },
+  h17: { id: 'h17', title: 'Farm sweater', img: '../herr-produkter/17.png', price: 500, desc: 'Warm farm sweater.' },
+  h18: { id: 'h18', title: 'Dress shirt', img: '../herr-produkter/18.jpg', price: 200, desc: 'Formal dress shirt.' },
+  h19: { id: 'h19', title: 'Cardigan', img: '../herr-produkter/23.png', price: 330, desc: 'Cozy cardigan.' },
+  h20: { id: 'h20', title: 'Fox embroidered sweater', img: '../herr-produkter/22.jpg', price: 700, desc: 'Embroidered fox sweater.' }
     };
 
     function qs(name) {
@@ -123,22 +123,22 @@
     const productId = qs('product') || 'h1';
     render(productId);
     document.getElementById('back-to-men').addEventListener('click', ()=>{
-      window.location.href = '/html/herr-produktsida.html';
+      window.location.href = 'herr-produktsida.html';
     });
   </script>
   <footer>
     <div class="info">
-      <img src="/icons/badge.png" alt="logo of the company that says: clothing for the 10s" height=77>
+      <img src="../icons/badge.png" alt="logo of the company that says: clothing for the 10s" height=77>
       <ul class="products">
         <li><p>Products</p></li>
-        <li><a href="/html/dam-produktsida.html">Women</a></li>
-        <li><a href="/html/herr-produktsida.html">Men</a></li>
+        <li><a href="dam-produktsida.html">Women</a></li>
+        <li><a href="herr-produktsida.html">Men</a></li>
       </ul>
       <ul class="company">
         <li><p>Our Company</p></li>
-        <li><a href="/html/om-oss.html">About</a></li>
-        <li><a href="/html/kontakt.html">Contact</a></li>
-        <li><a href="/html/referenser.html">Reviews</a></li>
+        <li><a href="om-oss.html">About</a></li>
+        <li><a href="kontakt.html">Contact</a></li>
+        <li><a href="referenser.html">Reviews</a></li>
       </ul>
     </div>
     <p class="copyright">Copyright Grupp 10 2025</p>
