@@ -67,8 +67,9 @@
           <p>Please fill out the form and we'll reply as soon as possible.</p>
           <p class="muted">For order-related enquiries, include your order number.</p>
           <div class="contact-card-art" aria-hidden="true">
-            <img src="../icons/contact-us-icon.png" alt="decorative">
+            <img src="/icons/company-building.jpg" alt="building">
           </div>
+           <p class="contact-phone" aria-label="phone number"><a href="tel:+46123456789">+46 12 345 67 89</a></p>
         </div>
 
         <div class="contact-card-form" aria-hidden="false">
@@ -88,6 +89,15 @@
               <label for="email">Email<span aria-hidden="true">*</span></label>
               <input type="email" id="email" name="email" required autocomplete="email">
             </div>
+
+            <fieldset class="field topic-field" aria-label="Topic of enquiry">
+              <legend>Topic<span aria-hidden="true">*</span></legend>
+              <div class="topic-options" role="radiogroup" aria-labelledby="topic-legend">
+                <label for="topic-purchase"><input type="radio" id="topic-purchase" name="topic" value="purchase" required> Purchase of product/service</label>
+                <label for="topic-company"><input type="radio" id="topic-company" name="topic" value="company"> Questions about the company</label>
+                <label for="topic-website"><input type="radio" id="topic-website" name="topic" value="website"> Comments on the website</label>
+              </div>
+            </fieldset>
 
             <div class="field">
               <label for="message">Message<span aria-hidden="true">*</span></label>

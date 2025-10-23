@@ -128,8 +128,9 @@ section {
 }
 
 .contact-card-art {
-  margin-top: 18px;
+  margin-top: 130px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -142,6 +143,28 @@ section {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(2,32,15,0.08);
   object-fit: cover;
+}
+
+.contact-phone {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.contact-phone a {
+  color: #F1DAA4;
+  text-decoration: none;
+}
+
+.contact-phone a:hover,
+.contact-phone a:focus {
+  text-decoration: underline;
+}
+
+.contact-card-text .contact-phone {
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
 }
 
 .contact-card h2 {
@@ -183,6 +206,37 @@ section {
 
 .contact-card textarea {
   resize: vertical;
+}
+
+.topic-field {
+  border: none;
+  padding: 0;
+  margin: 8px 0;
+  color: #F1DAA4;
+}
+
+.topic-field legend {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.topic-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.topic-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #F1DAA4;
+}
+
+.topic-options input[type="radio"] {
+  width: 16px;
+  height: 16px;
 }
 
 .btn-primary,
@@ -366,6 +420,10 @@ section {
 
   .contact-card-art img {
     max-width: 140px;
+  }
+
+  .contact-card-art {
+    margin-top: 18px;
   }
 }
 
